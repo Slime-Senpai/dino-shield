@@ -30,7 +30,7 @@ client.on('messageCreate', message => {
 
   const args = message.content.split(' ');
 
-  const method = args.splice(0, 1)[0].substr(prefix.length);
+  const method = args.splice(0, 2)[1];
 
   switch (method) {
     case 'off': case 'OFF':
