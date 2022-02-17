@@ -6,6 +6,8 @@ const banWords = /(j'|J'|Je|Timmy|Olivier|Slime|Auchakama|Aucha).*(offre|paye|do
 
 let activated = true;
 
+const prefix = process.env.PREFIX || 'dinoshield';
+
 client.once('ready', () => {
   console.log('DinoShield bot initiated');
   client.user.setActivity('Shielding ' + (activated ? 'ON' : 'OFF'));
@@ -24,11 +26,11 @@ client.on('messageCreate', message => {
     return;
   }
 
-  if (!message.content.startsWith('dino')) return;
+  if (!message.content.startsWith(prefix)) return;
 
   const args = message.content.split(' ');
 
-  const method = args.splice(0, 1)[0].substr(4);
+  const method = args.splice(0, 1)[0].substr(prefix.length);
 
   switch (method) {
     case 'off': case 'OFF':
