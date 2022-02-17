@@ -1,0 +1,27 @@
+{
+  "name": "dino-shield",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "No more pain au chocolat for you",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slime-Senpai/dino-shield.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slime-Senpai/dino-shield/issues"
+  },
+  "homepage": "https://github.com/Slime-Senpai/dino-shield#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "semistandard": "^16.0.1"
+  }
+}
